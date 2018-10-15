@@ -1,0 +1,26 @@
+{
+  "name": "op-view-progress",
+  "version": "0.0.1",
+  "description": "Element's position on the screen / view",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel-Novikov/op-view-progress.git"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "view",
+    "progress",
+    "javascript"
+  ],
+  "author": "Daniel Novikov <daniel.d.novikov@gmail.com> (http://danielnovikov.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Daniel-Novikov/op-view-progress/issues"
+  },
+  "homepage": "https://github.com/Daniel-Novikov/op-view-progress#readme"
+}

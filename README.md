@@ -1,2 +1,2 @@
 # op-view-progress
-Element's position the screen / view
+Element's position on the screen / view

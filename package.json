@@ -2,10 +2,18 @@
   "name": "op-view-progress",
   "version": "0.0.1",
   "description": "Element's position on the screen / viewport",
-  "main": "index.js",
+  "main": "dist/op-view-progress.cjs.js",
+  "module": "dist/op-view-progress.esm.js",
+  "browser": "dist/op-view-progress.umd.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Daniel-Novikov/op-view-progress.git"
@@ -24,6 +32,14 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Daniel-Novikov/op-view-progress/issues"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "rollup": "^0.65.0",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0"
   },
   "homepage": "https://github.com/Daniel-Novikov/op-view-progress#readme"
 }

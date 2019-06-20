@@ -6,8 +6,9 @@
   "module": "dist/op-view-progress.esm.js",
   "browser": "dist/op-view-progress.umd.js",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
+    "build": "npm run lint && rollup -c",
+    "lint": "eslint ./src",
+    "dev": "npm run lint && rollup -c -w",
     "test": "node test/test.js",
     "pretest": "npm run build"
   },
@@ -34,8 +35,12 @@
     "url": "https://github.com/Daniel-Novikov/op-view-progress/issues"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
     "rollup": "^0.65.0",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-commonjs": "^9.1.0",

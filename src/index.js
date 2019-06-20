@@ -8,8 +8,8 @@ class opViewProgress {
         const rect = this.el.getBoundingClientRect();
         const { top: t, height: h } = rect;
         const { innerHeight: wh } = window;
-        this.value = (t + h) / (wh + h);
+        this.value = (1 - (t + h) / (wh + h));
     }
 }
 
-export { opViewProgress };
+export default opViewProgress;

@@ -2,9 +2,7 @@
   "name": "op-view-progress",
   "version": "0.0.4",
   "description": "Element's position on the screen / viewport",
-  "main": "dist/op-view-progress.cjs.js",
-  "module": "dist/op-view-progress.esm.js",
-  "browser": "dist/op-view-progress.umd.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "npm run lint && babel ./src -d ./dist",
     "lint": "eslint ./src",

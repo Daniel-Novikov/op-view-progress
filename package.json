@@ -1,6 +1,6 @@
 {
   "name": "op-view-progress",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Element's position on the screen / viewport",
   "main": "dist/op-view-progress.cjs.js",
   "module": "dist/op-view-progress.esm.js",

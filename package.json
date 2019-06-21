@@ -8,7 +8,7 @@
   "scripts": {
     "build": "npm run lint && babel ./src -d ./dist",
     "lint": "eslint ./src",
-    "test": "mocha --require babel-core/register"
+    "test": "mocha --require @babel/register"
   },
   "files": [
     "dist"
@@ -33,24 +33,19 @@
     "url": "https://github.com/Daniel-Novikov/op-view-progress/issues"
   },
   "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
     "assert": "^2.0.0",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.2",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015": "^6.24.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.3",
     "jsdom": "15.1.1",
     "jsdom-global": "3.0.2",
-    "mocha": "^6.1.4",
-    "rollup": "^0.65.0",
-    "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-commonjs": "^9.1.0",
-    "rollup-plugin-node-resolve": "^3.0.0"
+    "mocha": "^6.1.4"
   },
   "homepage": "https://github.com/Daniel-Novikov/op-view-progress#readme"
 }
